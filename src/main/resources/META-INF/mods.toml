@@ -1,0 +1,44 @@
+modLoader="javafml"
+
+loaderVersion="[31,)" 
+
+issueTrackerURL="http://my.issue.tracker/"
+
+[[mods]]
+
+modId="oremod" 
+
+version="1.0" #${file.jarVersion}
+ 
+displayName="Ore Mod"
+
+updateJSONURL="http://myurl.me/"
+
+displayURL="http://example.com/" 
+
+logoFile="examplemod.png" 
+
+credits="ColderCube" 
+
+authors="ColderCube" 
+
+description='''
+'''
+
+
+
+# important thing
+[[dependencies.oremod]]  
+    modId="forge" 
+    mandatory=true
+    versionRange="[31,)" 
+    ordering="NONE"
+    side="BOTH"
+
+
+[[dependencies.examplemod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"

@@ -1,0 +1,9 @@
+{
+	"block.oremod.copper_ore":"Copper Ore",
+	"block.oremod.silver_ore":"Silver Ore",
+	"block.oremod.tin_ore":"Tin Ore",
+	"block.oremod.aluminium_ore":"Aluminium Ore",
+	"block.oremod.cobalt_ore":"Cobalt Ore",
+	"block.oremod.uranium_ore":"Uranium Ore",
+	"itemGroup.oremodtab":"Ore Mod"
+}
