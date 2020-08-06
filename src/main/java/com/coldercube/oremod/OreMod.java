@@ -35,7 +35,7 @@ public class OreMod {
 		final IEventBus eventbus = FMLJavaModLoadingContext.get().getModEventBus();
 		eventbus.addListener(this::setup);
 		eventbus.addListener(this::doClientStuff);
-		
+
 		ItemInit.ITEMS.register(eventbus);
 		LOGGER.info("Registered Item");
 		BlockInit.BLOCKS.register(eventbus);
@@ -80,9 +80,10 @@ public class OreMod {
 
 		@Override
 		public ItemStack createIcon() {
-			
+
 			return new ItemStack(BlockInit.COPPER_ORE.get());
 		}
+
 	}
 
 }
