@@ -56,6 +56,7 @@ public class OreMod {
 	public void onServerStarting(FMLServerStartingEvent event) {
 
 	}
+	
 
 	@SubscribeEvent
 	public static void onRegisterItem(final RegistryEvent.Register<Item> event) {

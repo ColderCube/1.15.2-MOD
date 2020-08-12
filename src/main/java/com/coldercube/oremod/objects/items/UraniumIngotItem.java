@@ -12,7 +12,6 @@ public class UraniumIngotItem extends Item {
 
 	public UraniumIngotItem(Properties properties) {
 		super(properties);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
