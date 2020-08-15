@@ -5,5 +5,17 @@
 	"block.oremod.aluminium_ore":"Aluminium Ore",
 	"block.oremod.cobalt_ore":"Cobalt Ore",
 	"block.oremod.uranium_ore":"Uranium Ore",
+	"block.oremod.ruby_ore":"Ruby Ore",
+	"block.oremod.platinum_ore":"Platinum Ore",
+	
+	"item.oremod.uranium_ingot":"Uranium Ingot",
+	"item.oremod.copper_ingot":"Copper Ingot",
+	"item.oremod.silver_ingot":"Silver Ingot",
+	"item.oremod.tin_ingot":"Tin Ingot",
+	"item.oremod.aluminium_ingot":"Aluminium Ingot",
+	"item.oremod.cobalt_ingot":"Cobalt Ingot",
+	"item.oremod.ruby":"Ruby",
+	
 	"itemGroup.oremodtab":"Ore Mod"
+	
 }
