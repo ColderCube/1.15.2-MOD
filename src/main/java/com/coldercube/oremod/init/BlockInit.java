@@ -54,13 +54,14 @@ public class BlockInit {
 
 	public static final RegistryObject<Block> WHITE_PHOSPHORUS_BLOCK = BLOCKS.register("white_phosphorus", // Pure White
 			() -> new WhitePhosphorusBlock(Block.Properties.create(Material.CLAY).hardnessAndResistance(0.1f)
-					.lightValue(13).harvestLevel(1).harvestTool(ToolType.PICKAXE)));
+					.lightValue(13).harvestLevel(1).harvestTool(ToolType.PICKAXE).hardnessAndResistance(2.0F, 3.0F)));
 
-	public static final RegistryObject<Block> LIMESTONE = BLOCKS.register("limestone", () -> new Block(Block.Properties
-			.create(Material.ROCK).sound(SoundType.GROUND).harvestLevel(0).harvestTool(ToolType.PICKAXE))); // Lime +
-																											// Yellow
+	public static final RegistryObject<Block> LIMESTONE = BLOCKS.register("limestone",
+			() -> new Block(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).harvestLevel(0)
+					.harvestTool(ToolType.PICKAXE).hardnessAndResistance(3.5F, 3.0F))); // Lime +
+	// Yellow
 
-	public static final RegistryObject<Block> MARBLE = BLOCKS.register("marble", () -> new Block(Block.Properties
-			.create(Material.ROCK).sound(SoundType.GROUND).harvestLevel(0).harvestTool(ToolType.PICKAXE))); // IDK :(
-
+	public static final RegistryObject<Block> MARBLE = BLOCKS.register("marble",
+			() -> new Block(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).harvestLevel(0)
+					.harvestTool(ToolType.PICKAXE).hardnessAndResistance(3.0F, 3.0F))); // IDK :(
 }

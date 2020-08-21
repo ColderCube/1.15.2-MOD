@@ -3,6 +3,7 @@ package com.coldercube.oremod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.coldercube.oremod.events.SleepEvent;
 import com.coldercube.oremod.init.BlockInit;
 import com.coldercube.oremod.init.ItemInit;
 
@@ -35,6 +36,7 @@ public class OreMod {
 		final IEventBus eventbus = FMLJavaModLoadingContext.get().getModEventBus();
 		eventbus.addListener(this::setup);
 		eventbus.addListener(this::doClientStuff);
+		eventbus.addListener(this::ClientSetup);
 
 		ItemInit.ITEMS.register(eventbus);
 		LOGGER.info("Registered Item");
@@ -55,6 +57,11 @@ public class OreMod {
 	@SubscribeEvent
 	public void onServerStarting(FMLServerStartingEvent event) {
 
+	}
+	
+	@SubscribeEvent
+	public void ClientSetup(FMLClientSetupEvent event) {
+		MinecraftForge.EVENT_BUS.register(new SleepEvent());
 	}
 	
 
