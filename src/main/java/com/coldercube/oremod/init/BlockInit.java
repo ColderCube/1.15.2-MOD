@@ -51,7 +51,6 @@ public class BlockInit {
 					.harvestTool(ToolType.PICKAXE).hardnessAndResistance(3.0F, 3.0F)));
 
 	// BLOCK
-
 	public static final RegistryObject<Block> WHITE_PHOSPHORUS_BLOCK = BLOCKS.register("white_phosphorus", // Pure White
 			() -> new WhitePhosphorusBlock(Block.Properties.create(Material.CLAY).hardnessAndResistance(0.1f)
 					.lightValue(13).harvestLevel(1).harvestTool(ToolType.PICKAXE).hardnessAndResistance(2.0F, 3.0F)));

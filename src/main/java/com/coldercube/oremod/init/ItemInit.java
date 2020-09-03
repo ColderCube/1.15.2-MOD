@@ -14,10 +14,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class ItemInit {
 	public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, OreMod.modid);
 
+	// Ingots
 	public static final RegistryObject<Item> COPPER_INGOT = ITEMS.register("copper_ingot",
-			() -> new Item(new Item.Properties().group(OreModItemGroup.instance)));
-
-	public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",
 			() -> new Item(new Item.Properties().group(OreModItemGroup.instance)));
 
 	public static final RegistryObject<Item> SILVER_INGOT = ITEMS.register("silver_ingot",
@@ -33,6 +31,10 @@ public class ItemInit {
 			() -> new UraniumIngotItem(new Item.Properties().group(OreModItemGroup.instance)));
 
 	public static final RegistryObject<Item> COBALT_INGOT = ITEMS.register("cobalt_ingot",
+			() -> new Item(new Item.Properties().group(OreModItemGroup.instance)));
+	
+	//Items
+	public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",
 			() -> new Item(new Item.Properties().group(OreModItemGroup.instance)));
 
 	// Sleeping Bags
